@@ -1,0 +1,958 @@
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+  left: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+z-index: 1;
+  margin-top: 15px;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: .25s;
+
+}
+
+.menu__btn>span::before {
+  content: '';
+  top: -8px;
+
+}
+
+.menu__btn>span::after {
+  content: '';
+  top: 8px;
+
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #6b01c2;
+  box-shadow: 2px 2px 6px #f5f4f4;
+  transition-duration: .25s;
+ 
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.img {
+ width: 20%;
+ height: 20%;
+ margin-left: 40%;
+
+}
+
+.header {
+ background: rgb(100, 0, 167);
+ font-family: 'Nunito', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+ transition-duration: .5s;
+}
+
+.search-pole {
+  width: 40px;
+  position: absolute;
+  margin-left: 90%;
+  margin-bottom: 0;
+  border-radius: 14px;
+  margin-top: -6%;
+}
+
+.search-pole:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.images {
+  width: 40%;
+  height: 40%;
+}
+
+.image4 {
+  width: 130px;
+    height: 130px;
+    display: flex;
+    margin-right: 7%;
+    margin-left: 4%;
+}
+
+.form {
+  width: 0;
+  height: 0;
+  margin-left: -100%;
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+.form input {
+  display: block;
+  height: 16px;
+  position: relative;
+  
+}
+
+.form button {
+  position: absolute;
+  left: 150px;
+  top: 4px;
+  outline: none;
+  border: none;
+}
+
+.form img {
+  width: 16px;
+  height: 12px;
+}
+
+.search-pole .images,
+.form {
+  float: left;
+}
+
+.search-pole:hover {
+  width: 230px;
+}
+
+.search-pole:hover .form {
+  display: block;
+  width: 260px;
+  height: 40px;
+  left: 50px;
+}
+
+
+
+.art {
+  width: 50px;
+  height: 50%;
+}
+
+.element {
+  height: 70px;
+  width: 270px;
+  border-radius: 15px;
+  margin: 0 50% 0 50%;
+  background-color: red;
+  animation:
+    nudge 5s linear infinite alternate;
+}
+
+
+.div1 {
+  z-index: 2;
+  position: relative;
+}
+
+.div2 {
+  z-index: 1;
+  position: relative;
+}
+
+body {
+  background-color:rgb(100, 0, 167);
+font-family: 'Nunito', sans-serif;
+}
+
+.form1 {
+  display: block;
+  background-image: url('http://www.fullhdoboi.com/wallpapers/thumbs/6/kartinka-apelsiny-1885.jpg');
+  background-size: cover;
+}
+
+.form1:before {
+  display: block;
+  content: '';
+  position: absolute;
+  background: linear-gradient(rgb(87, 0, 228), rgbargb(100, 0, 167) );
+  width: 410px;
+  height: 400px;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.logo {
+  width: 10%;
+}
+
+.logo1 {
+  margin-left: 15%;
+}
+
+.title1 {
+  color:#f5f4f4;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.text {
+  font-size: 20px;
+  margin-top: 3%;
+  text-align: center;
+  color:#f5f4f4;
+  margin-bottom: 50px;
+}
+
+.ul1 {
+  list-style-type: none;
+}
+
+.li1 {
+  margin: 4px 0;
+  color:#ffffff;
+  font-size: 20px;
+}
+
+.li1::before {
+  font-family: sans-serif;
+  content: "✔";
+  color: white;
+  width: 50em;
+  background: rgb(238, 19, 110);
+  padding-left: 3px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+/* //////////////////////////////////// */
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background-image: linear-gradient(rgb(100, 0, 167) 1em, #490481a6, rgb(100, 0, 167) calc(100% - 4em));
+}
+
+.running_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: min-content;
+}
+
+.row:nth-of-type(1) {
+  animation: slide 45s linear infinite;
+}
+
+.row:nth-of-type(2) {
+  animation: slide 45s linear infinite reverse;
+}
+
+.row:nth-of-type(3) {
+  animation: slide 45s linear infinite;
+}
+
+.row:nth-of-type(4) {
+  animation: slide 45s linear infinite reverse;
+}
+
+.row>img {
+  width: 350px;
+  height: 170px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  to {
+    transform: translatex(-50%);
+  }
+}
+
+
+.title2 {
+  z-index: 2;
+  color: #f5f4f4;
+text-align: center;
+margin-top: 10%;
+font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+.text1 {
+  z-index: 2;
+    color: #cacaca;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.butt {
+  z-index: 2;
+    color: #f5f4f4;
+    background-color:rgb(18, 202, 1);
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius:30px;
+    margin-left: 45%;
+    border-color: rgb(18, 202, 1);
+    
+}
+
+.a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo3 {
+  width: 200px;
+  height: 100px;
+}
+
+
+
+
+.link {
+  color: aliceblue;
+}
+
+/* Плашки */
+
+div {
+  display: block;
+  box-sizing: border-box;
+
+}
+
+p {
+  margin: 0;
+}
+
+.plashki__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.plashki__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+  background-color: rgb(36, 36, 36);
+  width: 100%;  border-radius:10px;
+  
+}
+
+.image {
+  width: 25%;
+  padding-right: 10%;
+}
+
+.image img {
+  display: block;
+  width: 90%;
+  height: 70px;
+
+}
+
+.title {
+  width: 20%;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 27px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.bonus {
+  width: 35%;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bonus .welcome {
+  color: gray;
+}
+
+.button {
+  background-color: #FFC600;
+padding: 3%;
+  min-width: 80px;
+  color: rgb(66, 66, 66);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  margin-right: 50%;
+  text-decoration: none;
+}
+
+.btncasinos {
+  background-color:rgb(247, 67, 142);
+  font-size: 22px;
+  color: aliceblue;
+  border-color:rgb(247, 67, 142);
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 45%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Конец плашки */
+
+
+/* Аккордеон 1 */
+
+ .tabs {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color:#f5f4f4;
+    
+      padding-top: 10px;
+    }
+  
+    .tabs>input[type="radio"] {
+      display: none;
+   
+    }
+  
+    .tabs>input[type="radio"]:checked+label {
+      background-color: #b6b6b6;
+        border-radius: 80px;
+      
+    }
+  
+    .tabs>div {
+      display: none;
+      padding: 40px 15px;
+    }
+  
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3,
+     #tab-btn-4:checked~#content-4,
+     #tab-btn-5:checked~#content-5,
+     #tab-btn-6:checked~#content-6
+     {
+      display: block;
+      background-color:rgb(100, 0, 167);;
+    }
+  
+    .tabs>label {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      background-color: #eee;
+      border: 1px solid transparent;
+      padding: 2px 8px;
+      font-size: 16px;
+      line-height: 1.5;
+      border-radius: 4px;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      margin-left: 6px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  
+    .tabs>label:first-of-type {
+      margin-left: 0; 
+     } 
+    
+     .img01 {
+      width: 100%;
+      height: 100%;  
+      margin-left: 30%;
+      border-radius:10%;
+     }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 15%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* Стили для градиента */
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(158, 56, 253, 0.781), rgba(117, 7, 150, 0.877));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10%;
+  margin-left: 28%;
+  width: 95%;
+  height: 95%;
+
+}
+
+/* Стили для кнопки проигрывателя */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 40%;
+  height: 30%;
+  margin-left: 25%;
+  margin-bottom: 25%;
+}
+
+/* Стили для названия игры */
+.game-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ margin-left: 50%;
+ margin-bottom: 10%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+ 
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Стили для наведения */
+.image-container:hover .gradient {
+  opacity: 1;
+}
+
+.image-container:hover .play-button {
+  opacity: 1;
+}
+
+.image-container:hover .game-title {
+  opacity: 1;
+}
+
+
+
+/* Логотипы */
+
+
+
+.wrapper1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  overflow: hidden;
+ 
+}
+
+.running_img1 {
+  position: absolute;
+
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+}
+
+.row1 {
+  display: flex;
+  flex-flow: row nowrap;
+  width: min-content;
+}
+
+.row1:nth-of-type(1) {
+  animation: slide 30s linear infinite;
+}
+
+.row1:nth-of-type(2) {
+  animation: slide 30s linear infinite reverse;
+}
+
+
+
+@keyframes slide {
+  to {
+    transform: translatex(-30%);
+  }
+}
+
+
+/* Сайтбар1 */
+
+
+
+.logosaitbar {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  cursor: pointer;
+}
+
+.logosaitbar1 {
+  width: 50px;
+  height: 50px;
+    position: fixed;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#sidebarToggler {
+  display: none;
+  position: fixed;
+}
+
+.head1 {
+margin-left: 90%;
+margin-top: 5%;
+position: fixed;
+}
+
+logo label {
+  margin-bottom: 10%;
+position: fixed;
+}
+
+content {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding-bottom: 50%;
+}
+
+aside {
+  background-color: #6b01c2;
+  box-shadow: 2px 2px 6px #f5f4f4;
+  height: 100%;
+  margin-left: 80%;
+  position: fixed;
+  width: 200%;
+}
+
+
+article {
+position: fixed;
+  height: 10%;
+
+}
+
+.lisaitbar {
+    color: #f1f1f1;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    list-style-type: none;
+}
+
+.ulsaitbar {
+  margin-top: 55px;
+}
+
+aside {
+  display: none;
+  height: 100%;
+  margin-top: -5%;
+position: fixed;
+}
+
+#sidebarToggler:checked+aside {
+  display: block;
+
+}
+
+/* Конец сайтбара 1*/
+
+
+.text01 {
+  z-index: 2;
+    color: #cacaca;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title3 {
+    color: #f5f4f4;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Подвал */
+
+.footer {
+background-color:#2b2b2b;
+margin-top: 3%;
+padding-bottom: 2%;
+}
+
+.imgfooter {
+  margin-left: 43%;
+  width: 15%;
+height: 15%;
+margin-top: 3%;
+margin-bottom: 3%;
+
+}
+
+.foo {
+  color: #f5f4f4;
+  text-decoration: none;
+  padding-right: 2%;
+  padding-top: 100%;
+
+}
+
+.mainmenu {
+  margin-left: 7%;
+}
+
+.foo1 {
+  color: #f5f4f4;
+  text-decoration: none;
+  padding-right: 2%;
+  padding-top: 100%;
+
+}
+
+.mainmenu1 {
+  margin-left: 13%;
+  margin-top: 2%;
+}
+
+
+.foo2 {
+  color: #f5f4f4;
+  text-decoration: none;
+  padding-right: 2%;
+  padding-top: 100%;
+
+}
+
+.mainmenu2 {
+  margin-left: 23%;
+  margin-top: 2%;
+}
+
+.logofooter {
+    margin-left: 3%;
+      margin-top: 2%;
+      width: 150px;
+      height: 150px;
+}
+
+.imagesfooter {
+  margin-left: 5%;
+}
+
+.textfoo {
+  color: #f5f4f4;
+  text-align: center;
+}
+
+/* Адаптация под мобильные устройства */
+
+@media (max-width: 500px) {
+.img {
+    width: 40%;
+    height: 40%;
+    margin-left: 33%;
+  }
+
+.images {
+  width: 40%;
+  height: 40%;
+  margin-left: -50%;
+  margin-top: -70%;
+}
+
+.wrapper {
+  width: 120%;
+  height: 450px;
+}
+
+.running_img {
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 750px;
+}
+
+.butt {
+  margin-left: 35%;
+  margin-top: 5%;
+
+}
+
+.head1 {
+  margin-left: 80%;
+  margin-top: 5%;
+
+}
+
+.logosaitbar {
+  width: 70px;
+  height: 70px;
+}
+
+.logosaitbar1 {
+  width: 50px;
+  height: 50px;
+}
+
+aside {
+  margin-left: 40%;
+  z-index: 1;
+}
+
+.logo {
+  width: 23%;
+
+}
+
+.logo1 {
+  margin-left: 5%;
+margin-top: -10%;
+margin-bottom: 5%;
+position: relative;
+
+}
+
+.text {
+  font-size: 18px;
+}
+
+/* Плашки */
+
+.image4 {
+  width: 60px;
+  height: 60px;
+  margin-left: 1%;
+}
+
+.title {
+  font-size: 17px;
+}
+
+.li1 {
+  font-size: 12px;
+}
+
+.welcom {
+  font-size: 12px;
+}
+
+.price {
+  font-size: 11px;
+}
+
+.plashki__list {
+  width: 100%;
+  margin-left: 0;
+}
+
+.button {
+margin-right: 0%;
+font-size: 11px;
+
+}
+
+.link {
+  font-size: 10px;
+}
+
+.btncasinos {
+  margin-left: 30%;
+  font-size: 20px;
+}
+
+}
+
